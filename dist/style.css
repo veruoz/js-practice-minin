@@ -1,9 +1,0 @@
-/*!**********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/header.css ***!
-  \**********************************************************************/header{padding:20px}
-/*!*********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/index.css ***!
-  \*********************************************************************/*{box-sizing:border-box;margin:0;padding:0}.box{border:1px solid #7e0b0b;margin:0 auto;min-height:200px;padding:20px;width:600px}
-/*!**************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/index.scss ***!
-  \**************************************************************************************************************/hr{margin:20px}.box-title{color:#8a2be2;text-align:center}
