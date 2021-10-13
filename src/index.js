@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+import {render} from 'react-dom';
 import AppService from './modules/app.sevice';
 import {config} from './modules/config'
 import App from './App';
@@ -12,5 +12,11 @@ console.log(config.key);
 
 const service = new AppService('Hello world')
 service.log()
+
+async function start() {
+    return await Promise.resolve('async working')
+}
+
+start().then(console.log)
 
 render(<App />, document.getElementById('app'))
