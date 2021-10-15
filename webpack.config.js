@@ -9,7 +9,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const isProd = process.env.NODE_ENV === 'production'
 const isDev = !isProd
 
-//* убираем хеш есть это build 
+//* убираем хеш есть это build *//
 const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
 
 const jsLoaders = () => {
@@ -35,7 +35,7 @@ module.exports = {
   output: {
     filename: filename('js'),
     path: path.resolve(__dirname, 'dist')
-  },  
+  },
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
@@ -45,7 +45,7 @@ module.exports = {
     open: true
   },
   performance: {
-    hints: 'warning',
+    hints: false,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -82,7 +82,7 @@ module.exports = {
     rules: [
       // {
       //   test: /\.css$/i,
-      //   use: [MiniCssExtractPlugin.loader, "css-loader"],
+      //   use: [MiniCssExtractPlugin.loader, 'css-loader'],
       // },
       {
         test: /\.s[ac]ss$/i,
